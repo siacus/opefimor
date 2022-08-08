@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+
+
+
+
+\usepackage{Rd}    
+\usepackage{Sweave}    
+
+%\VignetteIndexEntry{What is the `opefimor' package?} 
+
+
+\date{}
+
+\begin{document}
+
+The \pkg{opefimor} package contains the \R{} code unsed in the book:
+Iacus, S.M. (2011) {\it Option Pricing and
+		Estimation of Financial Models in R}, Wiley, Chichester. ISBN:
+        978-0-470-74584-7.
+
+\bigskip
+
+This document explains how to access the \R{} code used in Chapters 2-9 and the two appendixes.
+\bigskip
+\noindent
+
+Each chapter has an individual \R{} script file. All the files are contained inside the \code{book} directory
+of this package.
+\begin{Schunk}
+\begin{Sinput}
+R> require(opefimor)
+R> fdir <- file.path(.libPaths()[1],"opefimor","book")
+\end{Sinput}
+\end{Schunk}
+the directory \code{fdir} is strictly dependent on you installation of \R{}. The directory contains the following files
+\begin{Schunk}
+\begin{Sinput}
+R> list.files(fdir)
+\end{Sinput}
+\begin{Soutput}
+ [1] "appA.R" "appB.R" "cap2.R" "cap3.R" "cap4.R" "cap5.R" "cap6.R"
+ [8] "cap7.R" "cap8.R" "cap9.R"
+\end{Soutput}
+\end{Schunk}
+which you can open in your favourite editor or execute directly with, e.g.,
+\begin{Schunk}
+\begin{Sinput}
+R> source("cap2.R")
+\end{Sinput}
+\end{Schunk}
+\end{document}
+

@@ -1,0 +1,13 @@
+Package: opefimor
+Type: Package
+Title: Option Pricing and Estimation of Financial Models in R
+Version: 1.2.1
+Date: 2022-08-02
+Author: Stefano Maria Iacus
+Maintainer: Stefano Maria Iacus <siacus@iq.harvard.edu>
+Description: Companion package to the book Option Pricing and
+        Estimation of Financial Models in R, Wiley, Chichester. ISBN:
+        978-0-470-74584-7.
+License: GPL (>= 2)
+NeedsCompilation: no
+Packaged: 2015-08-21 21:51:46 UTC; jago
